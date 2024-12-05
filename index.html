@@ -165,43 +165,23 @@
     <div class="skills-container">
         <div class="skill-card">
             <h3>Programming</h3>
-            <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Google Apps Script</li>
-            </ul>
+            <p>Python, SQL, Google Apps Script</p>
         </div>
         <div class="skill-card">
             <h3>Data Visualization</h3>
-            <ul>
-                <li>Power BI</li>
-                <li>Streamlit</li>
-                <li>Excel</li>
-            </ul>
+            <p>Power BI, Streamlit, Excel</p>
         </div>
         <div class="skill-card">
             <h3>Cloud Platforms</h3>
-            <ul>
-                <li>AWS</li>
-                <li>Heroku</li>
-                <li>Google Cloud</li>
-            </ul>
+            <p>AWS, Heroku, Google Cloud</p>
         </div>
         <div class="skill-card">
             <h3>Databases</h3>
-            <ul>
-                <li>PostgreSQL</li>
-                <li>SQL Server</li>
-                <li>Google Sheets</li>
-            </ul>
+            <p>PostgreSQL, SQL Server, Google Sheets</p>
         </div>
         <div class="skill-card">
             <h3>Automation & APIs</h3>
-            <ul>
-                <li>Selenium</li>
-                <li>Facebook Ads API</li>
-                <li>GPT API</li>
-            </ul>
+            <p>Selenium, Facebook Ads API, GPT API</p>
         </div>
     </div>
 </section>
@@ -223,10 +203,10 @@
     }
 
     .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive grid */
         gap: 20px;
+        justify-items: center;
     }
 
     .skill-card {
@@ -234,7 +214,9 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 250px;
+        text-align: center;
+        width: 100%; /* Ensures that all cards are aligned */
+        max-width: 250px; /* Keeps the cards from growing too wide */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -244,28 +226,17 @@
     }
 
     .skill-card h3 {
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 18px;
+        margin-bottom: 10px;
         color: #00274d;
     }
 
-    .skill-card ul {
-        list-style-type: none;
-        padding-left: 0;
+    .skill-card p {
+        font-size: 14px;
+        color: #555;
     }
-
-    .skill-card ul li {
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-
-    .skill-card ul li:before {
-        content: "✔️";
-        margin-right: 8px;
-        color: #2b5876;
-    }
-
 </style>
+
 
         <section id="work-experience">
             <h2>💼 Work Experience</h2>
