@@ -226,19 +226,19 @@
     }
 
     .skills-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Reduced card size */
-        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
         justify-items: center;
     }
 
     .skill-card {
         background-color: #fff;
-        padding: 20px;
+        padding: 15px;
         border-radius: 10px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 250px;
+        width: 18%; /* Reduced card size */
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         text-align: left;
     }
@@ -265,7 +265,7 @@
     .skill-card ul {
         list-style-type: none;
         padding-left: 0;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .skill-card ul li {
@@ -283,7 +283,6 @@
     .skill-card:hover i {
         color: #6c5ce7; /* Purple color on hover */
     }
-
 </style>
 
 
