@@ -20,8 +20,8 @@
         }
         /* Sidebar Styling */
         nav {
-            width: 250px;
-            background: linear-gradient(135deg, #2b5876, #4e4376);
+            width: 300px;
+            background: linear-gradient(135deg, #2c3e50, #4e4376);
             color: #fff;
             height: 100vh;
             position: fixed;
@@ -29,30 +29,37 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
         nav h2 {
-            font-size: 22px;
-            margin-bottom: 20px;
+            font-size: 24px;
             text-align: center;
-            font-weight: bold;
+            margin-bottom: 10px;
         }
-        nav a {
+        nav p {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #d1d1d1;
+        }
+        nav .nav-link {
             display: block;
             text-decoration: none;
             color: #fff;
-            padding: 10px;
+            background-color: #574b90;
+            padding: 15px;
             margin: 10px 0;
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 16px;
-            transition: background 0.3s ease;
+            text-align: center;
+            transition: background 0.3s ease, transform 0.2s;
         }
-        nav a:hover {
-            background: #574b90;
-            padding-left: 15px;
+        nav .nav-link:hover {
+            background-color: #6c5ce7;
+            transform: translateY(-3px);
         }
         /* Main Content Styling */
         main {
-            margin-left: 270px;
+            margin-left: 320px;
             padding: 20px;
-            width: calc(100% - 270px);
+            width: calc(100% - 320px);
         }
         section {
             background: #fff;
@@ -92,14 +99,13 @@
 <body>
     <nav>
         <h2>Saraswathi Pandit</h2>
-        <h3>Data Science Enthusiast</h3>
-        
-        <a href="#about-me">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact-me">Contact Me</a>
+        <p>A Data Science Enthusiast<br>from Hyderabad, Telangana</p>
+        <a href="#about-me" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#work-experience" class="nav-link">Work Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact-me" class="nav-link">Contact Me</a>
     </nav>
     <main>
         <section id="about-me">
