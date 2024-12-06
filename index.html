@@ -524,7 +524,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #00274d;
     text-align: center;
-    width: 100%;
+    width: 100%; /* Ensures the container stretches across the entire page */
 }
 
 /* Title styling */
@@ -545,7 +545,6 @@
     text-align: left;
 }
 
-/* Project Item Hover Effects */
 .project-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -611,11 +610,8 @@
     #projects {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        width: 100%;  /* Make sure the container spans the full width */
-        justify-items: stretch; /* Ensures projects take up full width */
-        margin: 0;  /* Remove any unwanted margin */
-        padding: 0 10px; /* Adjust padding so projects align properly */
+        gap: 30px;
+        justify-items: stretch; /* Ensure that all items stretch to fill the grid */
     }
 }
 
