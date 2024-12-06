@@ -3,106 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name - Detailed View</title>
+    <title>Marketing Analytics Project</title>
     <style>
-        /* Inline CSS for basic styling */
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
         }
-        header {
-            background-color: #00274d;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        header a:hover {
-            text-decoration: underline;
-        }
-        main {
+        .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
+            background: #fff;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 28px;
-            color: #00274d;
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section-title {
+            margin-top: 20px;
             margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
         }
-        .project-link {
-            font-size: 16px;
-            color: #0066cc;
-            text-decoration: none;
-            margin-bottom: 20px;
-            display: inline-block;
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        .project-link:hover {
-            text-decoration: underline;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #00274d;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .tool {
+            background: #e6f7ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #0056b3;
+            border: 1px solid #b3e5fc;
         }
     </style>
 </head>
 <body>
-    <!-- Header with Back to Home Link -->
-    <header>
-        <a href="../index.html">⬅ Back to Home</a>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <h1>Project Name</h1>
-        <a href="https://project-link.com" target="_blank" class="project-link">Visit Project</a>
-        <p><strong>Detailed Description:</strong></p>
-        <p>
-            This project is about [insert purpose of the project]. It solves [problem or showcases something significant].
-            This section provides more in-depth details about the project's purpose, development process, and features.
-        </p>
-        <p>
-            The project was built using [insert technologies or tools]. It addresses challenges such as [list challenges] and provides solutions through [key features].
-        </p>
-        <p><strong>Features:</strong></p>
+    <div class="container">
+        <h1>Marketing Analytics Solution for Lion & Lion</h1>
+        
+        <h2 class="section-title">Purpose</h2>
+        <p>To enable Lion & Lion to monitor and optimize their Facebook and Instagram ad performance by automating data retrieval and visualization, ensuring timely insights for decision-making.</p>
+        
+        <h2 class="section-title">Problem</h2>
+        <p>Lion & Lion faced challenges in manually gathering, managing, and analyzing data from Facebook and Instagram. This process was time-consuming and prone to errors, delaying critical insights for their marketing campaigns.</p>
+        
+        <h2 class="section-title">Solution</h2>
         <ul>
-            <li>Feature 1: [Description of feature 1]</li>
-            <li>Feature 2: [Description of feature 2]</li>
-            <li>Feature 3: [Description of feature 3]</li>
+            <li>Automated data retrieval from Facebook and Instagram using their APIs with Python.</li>
+            <li>Stored the data in a PostgreSQL database hosted on Heroku, ensuring secure and scalable data management.</li>
+            <li>Built an interactive Power BI dashboard to visualize key metrics like ad reach, engagement, and ROI.</li>
+            <li>Automated dashboard updates using Python scripts to provide real-time data analysis.</li>
+            <li>Hosted the Power BI dashboard on a Streamlit application, offering seamless accessibility and collaboration.</li>
         </ul>
-        <img src="../images/project1-image.jpg" alt="Project Image">
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        © 2024 Your Name | All Rights Reserved
-    </footer>
+        
+        <h2 class="section-title">Tools and Technologies Used</h2>
+        <div class="tools-list">
+            <span class="tool">Python</span>
+            <span class="tool">PostgreSQL (Heroku)</span>
+            <span class="tool">Facebook Graph API</span>
+            <span class="tool">Instagram Basic Display API</span>
+            <span class="tool">Power BI</span>
+            <span class="tool">Streamlit</span>
+            <span class="tool">Heroku</span>
+        </div>
+    </div>
 </body>
 </html>
