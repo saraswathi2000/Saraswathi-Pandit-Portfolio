@@ -21,20 +21,111 @@
             min-height: 100vh;
         }
         /* Sidebar Styling */
-        <nav>
+        nav {
+            width: 270px;
+            background-color: #00274d; /* Dark Blue */
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        nav h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        nav p {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #d1d1d1;
+        }
+        nav .nav-link {
+            display: block;
+            text-decoration: none;
+            color: #00274d; /* Dark Blue */
+            background-color: #fff;
+            padding: 10px 10px; /* Reduced box size */
+            margin: 25px 0; /* Added spacing between boxes */
+            border-radius: 8px;
+            font-size: 14px; /* Reduced font size for compact look */
+            text-align: center;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+        nav .nav-link:hover {
+            background-color: #ffeb99; /* Light Yellow */
+            color: #00274d; /* Dark Blue */
+            transform: translateY(-3px);
+        }
+        /* Main Content Styling */
+        main {
+            margin-left: 320px;
+            padding: 20px;
+            width: calc(100% - 340px);
+            flex-grow: 1;
+        }
+        section {
+            margin-bottom: 30px; /* Spacing between sections */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff; /* White background */
+            color: #00274d; /* Dark Blue text */
+        }
+        section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #00274d; /* Dark Blue */
+        }
+        section p, section ul {
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        a {
+            color: #00274d; /* Dark Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            color: #fff;
+            background-color: #00274d; /* Dark Blue */
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffeb99; /* Light Yellow */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
     <h2>Saraswathi Pandit</h2>
     <p>A Data Science Enthusiast<br>from Hyderabad, Telangana</p>
     
     <!-- Add space before links -->
     <div style="margin-top: 20px;"></div>
-
-    <!-- New 'View My Resume' link -->
-    <a href="https://docs.google.com/document/d/your-google-doc-link-here" class="nav-link" target="_blank">
-        View My Resume
-    </a>
-    <a href="your-resume-pdf-link-here" class="nav-link" download>
-        <img src="https://cdn-icons-png.flaticon.com/512/172/172391.png" alt="Download" style="width: 20px; height: 20px; vertical-align: middle;">
-    </a>
 
     <!-- Navigation Links -->
     <a href="#about-me" class="nav-link">About Me</a>
@@ -64,6 +155,7 @@
         </a>
     </div>
 </nav>
+
 
 
     <main>
