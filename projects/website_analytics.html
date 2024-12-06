@@ -99,6 +99,19 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
 
+        .iframe-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
         footer {
             text-align: center;
             background: #00274d;
@@ -138,10 +151,9 @@
             <h2 class="section-title">Solution</h2>
             <ul>
                 <li>I used Selenium to automatically download data from Clarity each day and store it in Google Sheets. I also used the Clarity API to fetch data directly. This data was then connected to Power BI for real-time reporting and insights.</li>
-                
             </ul>
             
-            <h2 class="section-title">Tools and Technologies Used</h2><br>
+            <h2 class="section-title">Tools and Technologies Used</h2>
             <div class="tools">
                 <span class="tool">Microsoft Clarity</span>
                 <span class="tool">Microsoft Clarity API</span>
@@ -149,19 +161,17 @@
                 <span class="tool">Selenium</span>
                 <span class="tool">Power BI</span>
                 <span class="tool">Google Sheet</span>
-                
             </div>
+            
             <div class="iframe-container">
-    <!--<h2 class="section-title">Interactive Streamlit App</h2>--><br>
-    <p>Click the button below to access the dashboard:</p>
-    <a href="https://smartdino-facebook-mock.streamlit.app/" target="_blank" style="display: inline-block; padding: 10px 20px; background: #00274d; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">view dashboard</a>
-</div>
+                <h2 class="section-title">Power BI Dashboard</h2>
+                <iframe src="https://app.powerbi.com/reportEmbed?reportId=e6bf319b-b075-4e22-9490-fe6f6f98610c&autoAuth=true&ctid=5550926f-4a5e-459b-a543-816cd5def72e" allowfullscreen="true"></iframe>
+            </div>
         </div>
     </div>
     
-
     <footer>
-         By Saraswathi Pandit
+        By Saraswathi Pandit
     </footer>
 
 </body>
