@@ -133,7 +133,7 @@
     <a href="#work-experience" class="nav-link">Work Experience</a>
     <a href="#projects" class="nav-link">Projects</a>
     <a href="#education" class="nav-link">Education</a>
-    <a href="#acheivements and certifications" class="nav-link">Achievements and Certifications</a>
+    <a href="#acheivements" class="nav-link">Achievements and Certifications</a>
     <a href="#contact-me" class="nav-link">Contact Me</a>
     
     <!-- Add space before social media links -->
@@ -679,6 +679,81 @@
         color: #333;
     }
 </style>
+        <section id="achievements">
+    <h2>🏆 Achievements and Certifications</h2>
+    <div class="achievement-grid">
+        <!-- Box with Image -->
+        <div class="achievement-box">
+            <img src="https://via.placeholder.com/150" alt="Achievement Image">
+            <p>Certificate of Excellence in Coding Hackathon</p>
+        </div>
+        
+        <!-- Box with Embedded Certificate -->
+        <div class="achievement-box">
+            <iframe 
+                src="https://example.com/certificate.pdf" 
+                title="Certificate" 
+                width="100%" 
+                height="150">
+            </iframe>
+            <p><a href="https://example.com/certificate.pdf" target="_blank">View Full Certificate</a></p>
+        </div>
+        
+        <!-- Box with Text -->
+        <div class="achievement-box">
+            <p><strong>Data Analytics Certification</strong></p>
+            <p>Successfully completed a comprehensive course in Data Analytics, focusing on Python, SQL, and Power BI.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    #achievements {
+        font-family: Arial, sans-serif;
+        margin: 20px 0;
+    }
+
+    .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .achievement-box {
+        border: 2px solid #f0f0f0;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .achievement-box img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .achievement-box iframe {
+        border: none;
+        border-radius: 8px;
+    }
+
+    .achievement-box p {
+        margin: 10px 0 0;
+        color: #555;
+    }
+
+    .achievement-box a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    .achievement-box a:hover {
+        text-decoration: underline;
+    }
+</style>
+
 
         <section id="resume">
             <h2>📄 Resume</h2>
