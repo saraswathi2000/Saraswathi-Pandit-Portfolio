@@ -485,151 +485,140 @@
 
         <section id="projects">
     <h2>🛠️ Projects</h2>
+    <div class="projects-container">
+        <!-- Project 1: Power BI Project -->
+        <div class="project-item">
+            <h4>Project Name 1</h4>
+            <a href="https://link-to-project1.com" target="_blank">Project Link</a>
+            <p>Short project description here. What does the project solve or showcase?</p>
+            <img src="project1-image.jpg" alt="Project 1 Image" class="project-image">
+            <div class="powerbi-embed">
+                <iframe src="https://app.powerbi.com/view?r=your-embed-url" width="400" height="300" frameborder="0" allowFullScreen="true"></iframe>
+                <p><a href="https://link-to-full-dashboard.com" target="_blank">Go to Full Dashboard</a></p>
+            </div>
+        </div>
 
-    <!-- Project 1: Power BI Project -->
-    <div class="project-item">
-        <h4>Project Name 1</h4>
-        <a href="https://link-to-project1.com" target="_blank">Project Link</a>
-        <p>Short project description here. What does the project solve or showcase?</p>
-        <img src="project1-image.jpg" alt="Project 1 Image" class="project-image">
-        <div class="powerbi-embed">
-            <iframe src="https://app.powerbi.com/view?r=your-embed-url" width="400" height="300" frameborder="0" allowFullScreen="true"></iframe>
-            <p><a href="https://link-to-full-dashboard.com" target="_blank">Go to Full Dashboard</a></p>
+        <!-- Project 2: SQL Project -->
+        <div class="project-item">
+            <h4>Project Name 2</h4>
+            <a href="https://link-to-project2.com" target="_blank">Project Link</a>
+            <p>Short project description for SQL Project.</p>
+            <img src="project2-image.jpg" alt="Project 2 Image" class="project-image">
+        </div>
+
+        <!-- Project 3: Python Project -->
+        <div class="project-item">
+            <h4>Project Name 3</h4>
+            <a href="https://link-to-project3.com" target="_blank">Project Link</a>
+            <p>Short project description for Python project.</p>
+            <img src="project3-image.jpg" alt="Project 3 Image" class="project-image">
         </div>
     </div>
-
-    <!-- Project 2: SQL Project -->
-    <div class="project-item">
-        <h4>Project Name 2</h4>
-        <a href="https://link-to-project2.com" target="_blank">Project Link</a>
-        <p>Short project description for SQL Project.</p>
-        <img src="project2-image.jpg" alt="Project 2 Image" class="project-image">
-    </div>
-
-    <!-- Project 3: Python Project -->
-    <div class="project-item">
-        <h4>Project Name 3</h4>
-        <a href="https://link-to-project3.com" target="_blank">Project Link</a>
-        <p>Short project description for Python project.</p>
-        <img src="project3-image.jpg" alt="Project 3 Image" class="project-image">
-    </div>
-
-    <!-- Add more projects as needed -->
 </section>
+
 <style>
+    /* Section Styling */
     #projects {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #00274d;
-    text-align: center;
-    width: 100%;
-}
-
-/* Title Styling */
-#projects h2 {
-    font-size: 30px;
-    margin-bottom: 20px; /* Reduced margin between title and project boxes */
-    color: #00274d;
-}
-
-/* Grid Layout for Project Items */
-#projects .projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
-    gap: 20px;
-    padding-top: 10px; /* Ensures the grid starts right below the title */
-}
-
-/* Individual Project Box */
-.project-item {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-/* Hover Effects */
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Project Name Styling */
-.project-item h4 {
-    font-size: 20px;
-    color: #00274d;
-    margin-bottom: 10px;
-}
-
-/* Project Link Styling */
-.project-item a {
-    font-size: 16px;
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.project-item a:hover {
-    text-decoration: underline;
-}
-
-/* Project Description */
-.project-item p {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Project Image Styling */
-.project-image {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Reduced max width for images */
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Power BI Embed Box */
-.powerbi-embed {
-    margin-top: 20px;
-}
-
-.powerbi-embed iframe {
-    border-radius: 8px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.powerbi-embed p a {
-    font-size: 14px;
-    color: #0066cc;
-}
-
-.powerbi-embed p a:hover {
-    text-decoration: underline;
-}
-
-/* Media Query for Larger Screens */
-@media (min-width: 768px) {
-    #projects .projects-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: #00274d;
+        text-align: center;
+        width: 100%;
     }
-}
 
-@media (max-width: 768px) {
-    #projects .projects-container {
-        grid-template-columns: 1fr; /* 1 column on smaller screens */
+    /* Title Styling */
+    #projects h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #00274d;
     }
-}
 
+    /* Grid Layout for Projects */
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    /* Individual Project Styling */
+    .project-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-item h4 {
+        font-size: 20px;
+        color: #00274d;
+        margin-bottom: 10px;
+    }
+
+    .project-item a {
+        font-size: 16px;
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .project-item a:hover {
+        text-decoration: underline;
+    }
+
+    .project-item p {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+        margin-top: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Power BI Embed Box */
+    .powerbi-embed {
+        margin-top: 20px;
+    }
+
+    .powerbi-embed iframe {
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .powerbi-embed p a {
+        font-size: 14px;
+        color: #0066cc;
+    }
+
+    .powerbi-embed p a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .projects-container {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
+
 
 
         <section id="resume">
