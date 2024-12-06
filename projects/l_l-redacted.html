@@ -9,30 +9,33 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             color: #333;
         }
 
         .header {
-            background-color: #0056b3;
+            background: linear-gradient(90deg, #0056b3, #0077ff);
             color: #fff;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #003a73;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .container {
-            max-width: 100%;
-            margin: 30px auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .content {
@@ -40,61 +43,87 @@
         }
 
         .section-title {
-            margin-top: 20px;
+            margin-top: 30px;
             margin-bottom: 15px;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             color: #0056b3;
-            border-left: 4px solid #0056b3;
-            padding-left: 10px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 50px;
+            height: 4px;
+            background: #0056b3;
+            border-radius: 2px;
         }
 
         p {
-            margin: 10px 0;
+            margin: 10px 0 20px;
             line-height: 1.8;
+            font-size: 1rem;
+            color: #555;
         }
 
         ul {
             margin: 10px 0;
-            padding-left: 20px;
+            padding-left: 30px;
             line-height: 1.8;
+            font-size: 1rem;
         }
 
         .tools {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
             margin-top: 15px;
         }
 
         .tool {
-            background: #e6f7ff;
+            background: linear-gradient(90deg, #e6f7ff, #b3e5fc);
             color: #0056b3;
-            padding: 8px 12px;
-            border-radius: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
             font-size: 0.9rem;
-            border: 1px solid #b3e5fc;
-            transition: all 0.2s ease;
+            font-weight: bold;
+            border: 1px solid #90caf9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
         .tool:hover {
-            background: #b3e5fc;
-            cursor: default;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             text-align: center;
-            background: #f4f4f4;
-            padding: 10px 0;
+            background: #0056b3;
+            color: #fff;
+            padding: 20px 0;
             font-size: 0.9rem;
             margin-top: 30px;
-            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            color: #b3e5fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <h1>Marketing Analytics Solution for Lion & Lion</h1>
+        <h1>Marketing Analytics Solution</h1>
     </header>
 
     <div class="container">
@@ -128,7 +157,7 @@
     </div>
 
     <footer>
-        &copy; 2024 Your Name | Data Analytics Portfolio
+        &copy; 2024 Your Name | Designed with <a href="#">passion</a> for data.
     </footer>
 
 </body>
