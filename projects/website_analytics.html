@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Analytics Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #d3dce6);
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #00274d, #003366);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #001f3d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .content {
+            padding: 15px 25px;
+        }
+
+        .section-title {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #00274d;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 40px;
+            height: 3px;
+            background: #00274d;
+            border-radius: 2px;
+        }
+
+        p {
+            margin: 10px 0 15px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tool {
+            background: linear-gradient(90deg, #e6f7ff, #c4d9f2);
+            color: #00274d;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border: 1px solid #90caf9;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .tool:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            background: #00274d;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            border-top: 2px solid #001f3d;
+        }
+
+        footer a {
+            color: #b3e5fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Website Analytics Project</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <p>I built a website analytics dashboard for the leadership team, using data from Microsoft Clarity. Since there was no direct way to connect Clarity to Power BI, I automated data collection with Selenium and the Clarity API. The data was stored in Google Sheets and updated daily, which then fed into Power BI for clear, visual insights on website performance..</p><br>            
+          <h2 class="section-title">Purpose</h2>
+            <p>The goal was to create a Power BI dashboard to track website performance and user behavior using Microsoft Clarity data.</p>
+            
+            <h2 class="section-title">Problem</h2>
+            <p>The Analytics on Microsoft Clarity was not clear and it lacked a direct connection to Power BI, and so there was no easy way to get daily updates on website metrics.</p>
+            
+            <h2 class="section-title">Solution</h2>
+            <ul>
+                <li>I used Selenium to automatically download data from Clarity each day and store it in Google Sheets. I also used the Clarity API to fetch data directly. This data was then connected to Power BI for real-time reporting and insights.</li>
+                
+            </ul>
+            
+            <h2 class="section-title">Tools and Technologies Used</h2><br>
+            <div class="tools">
+                <span class="tool">Microsoft Clarity</span>
+                <span class="tool">Microsoft Clarity API</span>
+                <span class="tool">Python</span>
+                <span class="tool">Selenium</span>
+                <span class="tool">Power BI</span>
+                <span class="tool">Google Sheet</span>
+                
+            </div>
+            <div class="iframe-container">
+    <!--<h2 class="section-title">Interactive Streamlit App</h2>--><br>
+    <p>Click the button below to access the dashboard:</p>
+    <a href="https://smartdino-facebook-mock.streamlit.app/" target="_blank" style="display: inline-block; padding: 10px 20px; background: #00274d; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">view dashboard</a>
+</div>
+        </div>
+    </div>
+    
+
+    <footer>
+         By Saraswathi Pandit
+    </footer>
+
+</body>
+</html>
