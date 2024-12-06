@@ -516,6 +516,110 @@
 
     <!-- Add more projects as needed -->
 </section>
+<style>
+    #projects {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #00274d;
+    text-align: center;
+}
+
+/* Title styling */
+#projects h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #00274d;
+}
+
+/* Grid Layout for Project Items */
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Name Styling */
+.project-item h4 {
+    font-size: 20px;
+    color: #00274d;
+    margin-bottom: 10px;
+}
+
+/* Project Link Styling */
+.project-item a {
+    font-size: 16px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Project Description */
+.project-item p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Project Image Styling */
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Power BI Embed Box */
+.powerbi-embed {
+    margin-top: 20px;
+}
+
+.powerbi-embed iframe {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.powerbi-embed p a {
+    font-size: 14px;
+    color: #0066cc;
+}
+
+.powerbi-embed p a:hover {
+    text-decoration: underline;
+}
+
+/* Grid Layout for Projects */
+@media (min-width: 768px) {
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects {
+        display: block;
+    }
+}
+
+</style>
 
 
         <section id="resume">
