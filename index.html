@@ -295,17 +295,17 @@
     <div class="timeline-container">
         <!-- Timeline Arrow -->
         <div class="timeline-arrow">
-            <div class="timeline-icon">
-                <i class="fas fa-arrow-up"></i> <!-- Future Growth -->
+            <div class="timeline-icon timeline-internship">
+                <i class="fas fa-user-graduate"></i> <!-- Internship -->
             </div>
-            <div class="timeline-icon">
-                <i class="fas fa-chart-line"></i> <!-- BI Engineer -->
-            </div>
-            <div class="timeline-icon">
+            <div class="timeline-icon timeline-analyst">
                 <i class="fas fa-briefcase"></i> <!-- Data Analyst -->
             </div>
-            <div class="timeline-icon">
-                <i class="fas fa-user-graduate"></i> <!-- Internship -->
+            <div class="timeline-icon timeline-bi">
+                <i class="fas fa-chart-line"></i> <!-- BI Engineer -->
+            </div>
+            <div class="timeline-icon timeline-growth">
+                <i class="fas fa-arrow-up"></i> <!-- Future Growth -->
             </div>
         </div>
 
@@ -378,31 +378,24 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 40px; /* Indentation for the timeline */
+    padding-left: 60px; /* Indentation for the timeline */
 }
 
 /* Timeline Arrow */
 .timeline-arrow {
     position: absolute;
     left: 30px;
-    width: 2px;
+    width: 10px;
     height: 100%;
     background-color: #2b5876;
     z-index: 0;
-}
-
-/* Timeline Items */
-.timeline-item {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
+/* Timeline Icons on the Arrow */
 .timeline-icon {
     background-color: #fff;
     border: 2px solid #2b5876;
@@ -414,25 +407,33 @@
     align-items: center;
     font-size: 14px;
     color: #2b5876;
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
-.timeline-icon i {
-    font-size: 16px;
-}
+/* Placement of icons on the arrow */
+.timeline-icon:nth-child(1) { margin-top: 0; } /* Internship */
+.timeline-icon:nth-child(2) { margin-top: 35%; } /* Data Analyst */
+.timeline-icon:nth-child(3) { margin-top: 70%; } /* BI Engineer */
+.timeline-icon:nth-child(4) { margin-top: 95%; } /* Future Growth */
 
-/* Icons on the Arrow */
-.timeline-icon:nth-child(1) { top: 0; left: 10px; } /* Internship */
-.timeline-icon:nth-child(2) { top: 30%; left: 10px; } /* Data Analyst */
-.timeline-icon:nth-child(3) { top: 60%; left: 10px; } /* BI Engineer */
-.timeline-icon:nth-child(4) { top: 90%; left: 10px; } /* Future Growth */
-
+/* Role Details */
 .timeline-content {
     flex-grow: 1;
 }
 
 /* Role Details */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
 .role-details {
     margin-left: 50px; /* Indentation to the right of the arrow */
 }
@@ -478,6 +479,7 @@
     text-decoration: underline;
 }
 </style>
+
 
 
 
