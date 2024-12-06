@@ -164,7 +164,41 @@
         </a>
     </div>
 </nav>
+<style>
+.resume-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Small space between the link and the icon */
+    margin-bottom: 20px; /* Space after the resume link */
+}
 
+.resume-link .small-link {
+    padding: 5px 10px; /* Compact padding */
+    font-size: 12px; /* Smaller font size */
+    width: fit-content; /* Adjust width to content */
+    text-align: center;
+    background-color: #fff;
+    color: #00274d;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.resume-link .small-link:hover {
+    background-color: #ffeb99;
+    color: #00274d;
+    transform: translateY(-2px);
+}
+
+.download-icon img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.download-icon img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+</style>
 
 
 
