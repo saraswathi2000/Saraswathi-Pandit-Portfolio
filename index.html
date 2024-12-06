@@ -524,27 +524,38 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #00274d;
     text-align: center;
-    width: 100%; /* Ensures the container stretches across the entire page */
+    width: 100%;
 }
 
-/* Title styling */
+/* Title Styling */
 #projects h2 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin between title and project boxes */
     color: #00274d;
 }
 
 /* Grid Layout for Project Items */
-.project-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+#projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Reduced box size */
+    gap: 20px;
+    padding-top: 10px; /* Ensures the grid starts right below the title */
 }
 
+/* Individual Project Box */
+.project-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effects */
 .project-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -579,7 +590,7 @@
 .project-image {
     width: 100%;
     height: auto;
-    max-width: 450px;
+    max-width: 200px; /* Reduced max width for images */
     margin-top: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -605,21 +616,19 @@
     text-decoration: underline;
 }
 
-/* Grid Layout for Projects */
+/* Media Query for Larger Screens */
 @media (min-width: 768px) {
-    #projects {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        justify-items: stretch; /* Ensure that all items stretch to fill the grid */
+    #projects .projects-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
     }
 }
 
 @media (max-width: 768px) {
-    #projects {
-        display: block;
+    #projects .projects-container {
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
     }
 }
+
 
 
 </style>
