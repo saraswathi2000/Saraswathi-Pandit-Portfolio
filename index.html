@@ -524,6 +524,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #00274d;
     text-align: center;
+    width: 100%; /* Ensures the container stretches across the entire page */
 }
 
 /* Title styling */
@@ -610,6 +611,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        justify-items: stretch; /* Ensure that all items stretch to fill the grid */
     }
 }
 
