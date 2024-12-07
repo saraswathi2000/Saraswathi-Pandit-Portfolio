@@ -829,14 +829,96 @@
 </style>
 
         <section id="contact-me">
-            <h2>📬 Contact Me</h2>
-            <p>Let’s collaborate or connect!</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:saras2000swathi@gmail.com">saras2000swathi@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saraswathi-pandit-806796183/" target="_blank">Saraswathi Pandit</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/saraswathi2000" target="_blank">@saraswathi2000</a></li>
-            </ul>
-        </section>
+    <h2>📬 Contact Me</h2>
+    <p>Let’s collaborate or connect! Reach out through any of the following channels:</p>
+    <div class="contact-card">
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+            <span>Email:</span>
+            <a href="mailto:saras2000swathi@gmail.com">saras2000swathi@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
+            <span>LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/saraswathi-pandit-806796183/" target="_blank">Saraswathi Pandit</a>
+        </div>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+            <span>GitHub:</span>
+            <a href="https://github.com/saraswathi2000" target="_blank">@saraswathi2000</a>
+        </div>
+    </div>
+</section>
+<style>
+    /* Contact Section Styling */
+#contact-me {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f7f9fc; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact-me h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00274d; /* Dark Blue */
+}
+
+#contact-me p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333; /* Neutral text color */
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item span {
+    font-weight: bold;
+    color: #00274d;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #1a73e8; /* Link blue color */
+    font-weight: normal;
+    word-break: break-word; /* Ensures links break nicely */
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+    </style>
     </main>
     <footer>
     <p>🌟 Thank you for visiting my portfolio.</p>
